@@ -1,8 +1,8 @@
 from sklearn import datasets
-iris = datasets.load_iris()
+data = datasets.load_iris()
 
 import pandas as pd
-df = pd.DataFrame(iris['data'],columns=iris['feature_names'])
+df = pd.DataFrame(data['data'],columns=data['feature_names'])
 
 import sqlite3
 connect = sqlite3.connect('../db.sqlite3')
